@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ideal.znyx</groupId>
+  <artifactId>springBootSwagger</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>springBootSwagger</name>
+  <url>http://maven.apache.org</url>
+
+    <properties>
+	    <Encoding>UTF-8</Encoding>
+	    <JDK.version>1.8</JDK.version>
+   </properties>
+  
+
+  <dependencies>
+  
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-web</artifactId>
+	    <version>1.5.6.RELEASE</version>
+	</dependency>
+    
+    <dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger2</artifactId>
+	    <version>2.2.2</version>
+	</dependency>
+	<dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger-ui</artifactId>
+	    <version>2.2.2</version>
+	</dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
+   <build>
+  	<finalName>springBootSwagger</finalName>
+  	<plugins>
+  		<plugin>
+	  		<groupId>org.apache.maven.plugins</groupId>
+	  		<artifactId>maven-compiler-plugin</artifactId>
+	  		<configuration>
+	  			<source>${JDK.version}</source>
+	  			<target>${JDK.version}</target>
+	  			<encode>${Encoding}</encode>
+	  		</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+</project>
